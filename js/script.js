@@ -7,6 +7,7 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
         pictures.forEach(picture => {
             cardContainer.innerHTML += `
                 <div class="card">
+                    <div class="pin"></div>
                     <img class="img" src="${picture.url}" alt="${picture.title}">
                     <div class="img-description">
                         <h3>${picture.date}</h3>

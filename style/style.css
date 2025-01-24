@@ -21,21 +21,24 @@ h1 {
 /* MAIN CONTAINER */
 main {
     background-image: url(../img/cork.png);
+    min-height: calc(100vh - 150px);
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
 
 .card-container {
+    width: 900px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 /* cards */
 .card {
-    height: 250px;
-    width: 245px;
+    height: 270px;
+    width: 230px;
     background-color: aquamarine;
     margin: 10px;
 }
@@ -44,10 +47,18 @@ main {
 /*************************************************
     TABLET VERSION
  *************************************************/
-@media screen and (max-width: 790px) {}
+@media screen and (max-width: 790px) {
+    .card-container {
+        width: 600px;
+    }
+}
 
 
 /*************************************************
     MOBILE VERSION
  *************************************************/
-@media screen and (max-width: 507px) {}
+@media screen and (max-width: 507px) {
+    .card-container {
+        width: 300px;
+    }
+}

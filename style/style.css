@@ -17,3 +17,37 @@ header {
 h1 {
     font-size: 70px;
 }
+
+/* MAIN CONTAINER */
+main {
+    background-image: url(../img/cork.png);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* cards */
+.card {
+    height: 250px;
+    width: 245px;
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+
+/*************************************************
+    TABLET VERSION
+ *************************************************/
+@media screen and (max-width: 790px) {}
+
+
+/*************************************************
+    MOBILE VERSION
+ *************************************************/
+@media screen and (max-width: 507px) {}

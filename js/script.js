@@ -24,3 +24,16 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
     .catch(error => {
         cardContainer.innerHTML = "Errore nella richiesta. Riprova più tardi.";
     });
+
+
+const card = document.querySelector(".card");
+const fullscreen = document.querySelector(".fullscreen");
+const button = document.querySelector(".fullscreen-button");
+
+card.addEventListener("click", () => {
+    fullscreen.style.display = "block";
+});
+
+button.addEventListener("click", () => {
+    fullscreen.style.display = "none";
+});

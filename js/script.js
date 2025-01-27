@@ -26,9 +26,9 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
     });
 
 
-const card = document.querySelector(".card");
-const fullscreen = document.querySelector(".fullscreen");
-const button = document.querySelector(".fullscreen-button");
+const card = document.querySelectorAll(".card");
+const fullscreen = document.querySelectorAll(".fullscreen");
+const button = document.querySelectorAll(".fullscreen-button");
 
 card.addEventListener("click", () => {
     fullscreen.style.display = "block";

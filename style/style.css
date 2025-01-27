@@ -47,6 +47,7 @@ main {
     justify-content: center;
     align-content: flex-start;
     position: relative;
+    cursor: pointer;
 }
 
 .pin {
@@ -111,11 +112,13 @@ h2 {
     padding: 5px;
     margin: 30px;
     font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
 }
 
 .fullscreen-img {
     height: 60%;
     object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 

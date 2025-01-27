@@ -35,9 +35,12 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
             });
         });
 
-        // button.addEventListener("click", () => {
-        //     fullscreen.style.display = "none";
-        // });
+        fullscreenButton.forEach((singleButton, index) => {
+            singleButton.addEventListener("click", () => {
+                fullscreen[index].classList.remove("fullscreen-on");
+                fullscreen[index].classList.add("fullscreen-off");
+            });
+        });
     })
 
     .catch(error => {

@@ -15,21 +15,23 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
                     </div>
                 </div>
                 
-                </div>
-                <div class="fullscreen">
-                    <button class="fullscreen-button">CHIUDI</button>
-                    <img class="img" src="${picture.url}" alt="${picture.title}">
+                <div class="fullscreen-off">
+                    <div class="image-container">
+                        <button class="fullscreen-button">CHIUDI</button>
+                        <img class="fullscreen-img" src="${picture.url}" alt="${picture.title}">
+                    </div>
                 </div>
             `;
         });
 
         const card = document.querySelectorAll(".card");
-        const fullscreen = document.querySelectorAll(".fullscreen");
+        const fullscreen = document.querySelectorAll(".fullscreen-off");
         const fullscreenButton = document.querySelectorAll(".fullscreen-button");
 
         card.forEach((singleCard, index) => {
             singleCard.addEventListener("click", () => {
-                fullscreen[index].classList.add("displayblock");
+                fullscreen[index].classList.remove("fullscreen-off");
+                fullscreen[index].classList.add("fullscreen-on");
             });
         });
 

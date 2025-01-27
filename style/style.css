@@ -84,6 +84,33 @@ h2 {
     font-size: 20px;
 }
 
+/* fullscreen */
+.fullscreen {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.fullscreen-img {
+    height: 60%;
+    object-fit: cover;
+}
+
+.fullscreen-button {
+    padding: 5px;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 /*************************************************
     TABLET VERSION

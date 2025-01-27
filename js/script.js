@@ -14,6 +14,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
                         <h2>${picture.title.toUpperCase()}</h2>
                     </div>
                 </div>
+                
+                </div>
                 <div class="fullscreen">
                     <button class="fullscreen-button">CHIUDI</button>
                     <img class="img" src="${picture.url}" alt="${picture.title}">
@@ -25,9 +27,9 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
         const fullscreen = document.querySelectorAll(".fullscreen");
         const fullscreenButton = document.querySelectorAll(".fullscreen-button");
 
-        card.forEach((card, index) => {
-            card.addEventListener("click", () => {
-                fullscreen[index].style.display = "block";
+        card.forEach((singleCard, index) => {
+            singleCard.addEventListener("click", () => {
+                fullscreen[index].classList.add("displayblock");
             });
         });
 

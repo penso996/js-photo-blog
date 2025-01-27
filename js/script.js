@@ -20,20 +20,22 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
                 </div>
             `;
         });
+
+        const card = document.querySelectorAll(".card");
+        const fullscreen = document.querySelectorAll(".fullscreen");
+        const fullscreenButton = document.querySelectorAll(".fullscreen-button");
+
+        card.forEach((card, index) => {
+            card.addEventListener("click", () => {
+                fullscreen[index].style.display = "block";
+            });
+        });
+
+        // button.addEventListener("click", () => {
+        //     fullscreen.style.display = "none";
+        // });
     })
+
     .catch(error => {
         cardContainer.innerHTML = "Errore nella richiesta. Riprova più tardi.";
     });
-
-
-const card = document.querySelectorAll(".card");
-const fullscreen = document.querySelectorAll(".fullscreen");
-const button = document.querySelectorAll(".fullscreen-button");
-
-card.addEventListener("click", () => {
-    fullscreen.style.display = "block";
-});
-
-button.addEventListener("click", () => {
-    fullscreen.style.display = "none";
-});

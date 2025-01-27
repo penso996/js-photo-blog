@@ -100,15 +100,15 @@ h2 {
     z-index: 1000;
 }
 
-.fullscreen-img {
-    height: 60%;
-    object-fit: cover;
-}
-
 .fullscreen-button {
     padding: 5px;
     margin: 30px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.fullscreen-img {
+    height: 60%;
+    object-fit: cover;
 }
 
 

@@ -14,6 +14,10 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
                         <h2>${picture.title.toUpperCase()}</h2>
                     </div>
                 </div>
+                <div class="fullscreen">
+                    <button class="fullscreen-button">CHIUDI</button>
+                    <img class="img" src="${picture.url}" alt="${picture.title}">
+                </div>
             `;
         });
     })
